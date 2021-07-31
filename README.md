@@ -1,4 +1,4 @@
-# UI
+# UI ![UI CI/CD](https://github.com/markmorcos/ui/actions/workflows/merge.yml/badge.svg)
 
 ## Building and running on localhost
 

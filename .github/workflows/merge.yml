@@ -1,4 +1,4 @@
-name: Deploy apps
+name: UI CI/CD
 on:
   push:
     branches:
