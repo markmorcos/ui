@@ -1,4 +1,4 @@
-name: UI CI/CD
+name: Branch
 on: pull_request
 jobs:
   build:

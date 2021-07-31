@@ -19,9 +19,10 @@
     "start:ui": "parcel src/index.html",
     "start:storybook": "start-storybook -p 6006",
     "build": "yarn clean && yarn build:ui && yarn build:storybook",
-    "build:ui": "yarn clean:ui && parcel build --dist-dir dist/ui --public-url . src/index.html",
+    "build:ui": "yarn clean:ui && parcel build --dist-dir dist/ui --public-url https://ui-fe.s3.eu-central-1.amazonaws.com src/index.html",
     "build:storybook": "yarn clean:storybook && build-storybook -o dist/storybook",
-    "test": "jest"
+    "test": "jest",
+    "deploy": "storybook-to-aws-s3 --ci -e=dist/storybook --bucket-path=ui-fe --s3-sync-options=--acl=public-read"
   },
   "dependencies": {
     "react": "^17.0.2",
@@ -36,6 +37,7 @@
     "@storybook/addon-essentials": "^6.3.6",
     "@storybook/addon-links": "^6.3.6",
     "@storybook/react": "^6.3.6",
+    "@storybook/storybook-deployer": "^2.8.10",
     "@types/react": "^17.0.15",
     "@types/react-dom": "^17.0.9",
     "babel-loader": "^8.2.2",
