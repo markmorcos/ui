@@ -31,3 +31,10 @@ To run unit tests:
 ```sh
 yarn test
 ```
+
+## Deploying
+To deploy to an S3 bucket:
+
+```sh
+yarn start
+```
