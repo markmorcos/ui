@@ -46,6 +46,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", "npm:17.0.15"],
             ["@types/react-dom", "npm:17.0.9"],
             ["babel-loader", "virtual:abd86f0db4e628a3d1844be9352358a814881ef2b82dee67188058dec9fd0f37a9154622d1055dbe04477d6e93c1d74ae4e55efba208fff05df26b9f136509a2#npm:8.2.2"],
+            ["concurrently", "npm:6.2.0"],
             ["jest", "virtual:abd86f0db4e628a3d1844be9352358a814881ef2b82dee67188058dec9fd0f37a9154622d1055dbe04477d6e93c1d74ae4e55efba208fff05df26b9f136509a2#npm:27.0.6"],
             ["parcel", "npm:2.0.0-beta.3.1"],
             ["parcel-bundler", "npm:1.12.5"],
@@ -10694,6 +10695,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["concurrently", [
+        ["npm:6.2.0", {
+          "packageLocation": "./.yarn/cache/concurrently-npm-6.2.0-e0df78f085-2934121e66.zip/node_modules/concurrently/",
+          "packageDependencies": [
+            ["concurrently", "npm:6.2.0"],
+            ["chalk", "npm:4.1.2"],
+            ["date-fns", "npm:2.23.0"],
+            ["lodash", "npm:4.17.21"],
+            ["read-pkg", "npm:5.2.0"],
+            ["rxjs", "npm:6.6.7"],
+            ["spawn-command", "npm:0.0.2"],
+            ["supports-color", "npm:8.1.1"],
+            ["tree-kill", "npm:1.2.2"],
+            ["yargs", "npm:16.2.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["connect", [
         ["npm:3.7.0", {
           "packageLocation": "./.yarn/cache/connect-npm-3.7.0-25ccb085cc-96e1c4effc.zip/node_modules/connect/",
@@ -11414,6 +11433,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["abab", "npm:2.0.5"],
             ["whatwg-mimetype", "npm:2.3.0"],
             ["whatwg-url", "npm:8.7.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["date-fns", [
+        ["npm:2.23.0", {
+          "packageLocation": "./.yarn/cache/date-fns-npm-2.23.0-fa1182c861-485216d550.zip/node_modules/date-fns/",
+          "packageDependencies": [
+            ["date-fns", "npm:2.23.0"]
           ],
           "linkType": "HARD",
         }]
@@ -21016,6 +21044,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["rxjs", [
+        ["npm:6.6.7", {
+          "packageLocation": "./.yarn/cache/rxjs-npm-6.6.7-055046ea3c-bc334edef1.zip/node_modules/rxjs/",
+          "packageDependencies": [
+            ["rxjs", "npm:6.6.7"],
+            ["tslib", "npm:1.14.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["safe-buffer", [
         ["npm:5.1.1", {
           "packageLocation": "./.yarn/cache/safe-buffer-npm-5.1.1-cdaab52fc6-7f117b6045.zip/node_modules/safe-buffer/",
@@ -21633,6 +21671,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/space-separated-tokens-npm-1.1.5-2352c83473-8ef68f1cfa.zip/node_modules/space-separated-tokens/",
           "packageDependencies": [
             ["space-separated-tokens", "npm:1.1.5"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["spawn-command", [
+        ["npm:0.0.2", {
+          "packageLocation": "./.yarn/cache/spawn-command-npm-0.0.2-014d4d5d9f-e35c5d2817.zip/node_modules/spawn-command/",
+          "packageDependencies": [
+            ["spawn-command", "npm:0.0.2"]
           ],
           "linkType": "HARD",
         }]
@@ -22730,6 +22777,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["tree-kill", [
+        ["npm:1.2.2", {
+          "packageLocation": "./.yarn/cache/tree-kill-npm-1.2.2-3da0e5a759-49117f5f41.zip/node_modules/tree-kill/",
+          "packageDependencies": [
+            ["tree-kill", "npm:1.2.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["trim", [
         ["npm:0.0.1", {
           "packageLocation": "./.yarn/cache/trim-npm-0.0.1-d138075543-2b4646dff9.zip/node_modules/trim/",
@@ -22796,6 +22852,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["tslib", [
+        ["npm:1.14.1", {
+          "packageLocation": "./.yarn/cache/tslib-npm-1.14.1-102499115e-dbe628ef87.zip/node_modules/tslib/",
+          "packageDependencies": [
+            ["tslib", "npm:1.14.1"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:2.3.0", {
           "packageLocation": "./.yarn/cache/tslib-npm-2.3.0-277e75e108-8869694c26.zip/node_modules/tslib/",
           "packageDependencies": [
@@ -22943,6 +23006,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", "npm:17.0.15"],
             ["@types/react-dom", "npm:17.0.9"],
             ["babel-loader", "virtual:abd86f0db4e628a3d1844be9352358a814881ef2b82dee67188058dec9fd0f37a9154622d1055dbe04477d6e93c1d74ae4e55efba208fff05df26b9f136509a2#npm:8.2.2"],
+            ["concurrently", "npm:6.2.0"],
             ["jest", "virtual:abd86f0db4e628a3d1844be9352358a814881ef2b82dee67188058dec9fd0f37a9154622d1055dbe04477d6e93c1d74ae4e55efba208fff05df26b9f136509a2#npm:27.0.6"],
             ["parcel", "npm:2.0.0-beta.3.1"],
             ["parcel-bundler", "npm:1.12.5"],

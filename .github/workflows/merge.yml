@@ -5,7 +5,7 @@ on:
       - main
 jobs:
   build:
-    runs-on: macos-latest
+    runs-on: linux-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -19,7 +19,7 @@ jobs:
       - name: Build
         run: yarn build
 
-      - name: Set AWS credentials
+      - name: AWS Login
         uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
