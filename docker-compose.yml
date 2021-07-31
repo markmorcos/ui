@@ -1,9 +1,16 @@
 version: '2'
 services:
-  website:
+  ui:
     image: nginx:alpine
     ports:
       - 1234:80
     volumes:
       - ./conf.d:/etc/nginx/conf.d
-      - ./dist:/usr/share/nginx/html
+      - ./dist/ui:/usr/share/nginx/html
+  storybook:
+    image: nginx:alpine
+    ports:
+      - 6006:80
+    volumes:
+      - ./conf.d:/etc/nginx/conf.d
+      - ./dist/storybook:/usr/share/nginx/html
