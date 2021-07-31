@@ -1,15 +1,13 @@
 import * as React from 'react';
 
+import { Button } from './components/Button/Button';
+
 interface Props { }
 
 class App extends React.Component<Props> {
   render() {
     return (
-      <>
-        <h1>
-          Hello, world!
-        </h1>
-      </>
+      <Button primary>Hello, world!</Button>
     );
   }
 }
