@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "description": "UI",
   "main": "dist/index.html",
-  "keywords": ["ui", "design", "system", "component"],
+  "keywords": [
+    "ui",
+    "design",
+    "system",
+    "component"
+  ],
   "author": "Mark Morcos",
   "license": "MIT",
   "scripts": {
