@@ -1,4 +1,6 @@
-# UI ![UI CI/CD](https://github.com/markmorcos/ui/actions/workflows/merge.yml/badge.svg)
+# UI ![Main](https://github.com/markmorcos/ui/actions/workflows/merge.yml/badge.svg)
+
+This repository contains 2 main apps. The Storybook app for component documentation and the UI app for demonstrating these components 
 
 ## Building and running on localhost
 
@@ -8,21 +10,41 @@ First install dependencies:
 yarn install
 ```
 
-To run in hot module reloading mode:
+To run UI in hot module reloading mode:
+
+```sh
+yarn start:ui
+```
+
+To run Storybook in hot module reloading mode:
+
+```sh
+yarn start:storybook
+```
+
+To run both concurrently:
 
 ```sh
 yarn start
 ```
 
-To create a production build:
+To create a UI production build:
+
+```sh
+yarn build:ui
+```
+
+To create a Storybook production build:
+
+```sh
+yarn build:storybook
+```
+
+To create a production build for both apps:
 
 ```sh
 yarn build
 ```
-
-## Running
-
-Open the file `dist/index.html` in your browser
 
 ## Testing
 
@@ -33,8 +55,9 @@ yarn test
 ```
 
 ## Deploying
-To deploy to an S3 bucket:
+To deploy Storybook to S3:
 
 ```sh
-yarn start
+yarn deploy
 ```
+Note: AWS credentials should be configured for this command to work
