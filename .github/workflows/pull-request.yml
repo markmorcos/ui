@@ -1,7 +1,7 @@
 name: Branch
 on: pull_request
 jobs:
-  build:
+  branch:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

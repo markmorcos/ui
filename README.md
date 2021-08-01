@@ -1,6 +1,14 @@
-# UI ![Main](https://github.com/markmorcos/ui/actions/workflows/merge.yml/badge.svg)
+# UI
+
+<p>
+  <a href="https://github.com/markmorcos/ui/actions" alt="Main">
+    <img src="https://github.com/markmorcos/ui/actions/workflows/merge.yml/badge.svg" />
+  </a>
+</p>
 
 This repository contains 2 main apps. The Storybook app for component documentation and the UI app for demonstrating these components 
+
+[Storybook URL](https://ui-fe.s3.eu-central-1.amazonaws.com/index.html)
 
 ## Building and running on localhost
 
