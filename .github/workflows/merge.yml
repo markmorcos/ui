@@ -20,7 +20,7 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           install: false
-          build: false
+          build: yarn cypress info
           start: yarn start:demo
           command: yarn test:e2e
 
