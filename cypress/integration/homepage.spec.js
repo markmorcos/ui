@@ -1,4 +1,4 @@
-import { welcomeMessage } from '../../fixtures/homepage.json'
+const { welcomeMessage } = require('../../fixtures/homepage.json')
 
 describe('Button', () => {
   beforeEach(() => {
