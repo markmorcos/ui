@@ -17,9 +17,9 @@ jobs:
         run: yarn test
 
       - name: Cypress
-        run: |
-          yarn start:demo
-          yarn test:e2e
+        uses: cypress-io/github-action@v2
+        with:
+          start: yarn start
 
       - name: Build
         run: yarn build
