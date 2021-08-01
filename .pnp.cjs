@@ -41,6 +41,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@storybook/addon-docs", "virtual:abd86f0db4e628a3d1844be9352358a814881ef2b82dee67188058dec9fd0f37a9154622d1055dbe04477d6e93c1d74ae4e55efba208fff05df26b9f136509a2#npm:6.3.6"],
             ["@storybook/addon-essentials", "virtual:abd86f0db4e628a3d1844be9352358a814881ef2b82dee67188058dec9fd0f37a9154622d1055dbe04477d6e93c1d74ae4e55efba208fff05df26b9f136509a2#npm:6.3.6"],
             ["@storybook/addon-links", "virtual:abd86f0db4e628a3d1844be9352358a814881ef2b82dee67188058dec9fd0f37a9154622d1055dbe04477d6e93c1d74ae4e55efba208fff05df26b9f136509a2#npm:6.3.6"],
+            ["@storybook/addon-postcss", "npm:2.0.0"],
             ["@storybook/react", "virtual:abd86f0db4e628a3d1844be9352358a814881ef2b82dee67188058dec9fd0f37a9154622d1055dbe04477d6e93c1d74ae4e55efba208fff05df26b9f136509a2#npm:6.3.6"],
             ["@testing-library/jest-dom", "npm:5.14.1"],
             ["@testing-library/react", "virtual:abd86f0db4e628a3d1844be9352358a814881ef2b82dee67188058dec9fd0f37a9154622d1055dbe04477d6e93c1d74ae4e55efba208fff05df26b9f136509a2#npm:12.0.0"],
@@ -5951,6 +5952,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@storybook/addon-postcss", [
+        ["npm:2.0.0", {
+          "packageLocation": "./.yarn/cache/@storybook-addon-postcss-npm-2.0.0-b5e539ced6-3dee9003a5.zip/node_modules/@storybook/addon-postcss/",
+          "packageDependencies": [
+            ["@storybook/addon-postcss", "npm:2.0.0"],
+            ["@storybook/node-logger", "npm:6.3.6"],
+            ["css-loader", "virtual:b5e539ced6f4b3131b6ee9af1a1a78d66c13001e7f137f6b56899c524b32b9192942b70a808b0900d472d7f1d27836ee93da412d24d890b4d09c9e25247c0fc3#npm:3.6.0"],
+            ["postcss", "npm:7.0.36"],
+            ["postcss-loader", "virtual:b5e539ced6f4b3131b6ee9af1a1a78d66c13001e7f137f6b56899c524b32b9192942b70a808b0900d472d7f1d27836ee93da412d24d890b4d09c9e25247c0fc3#npm:4.3.0"],
+            ["style-loader", "virtual:b5e539ced6f4b3131b6ee9af1a1a78d66c13001e7f137f6b56899c524b32b9192942b70a808b0900d472d7f1d27836ee93da412d24d890b4d09c9e25247c0fc3#npm:1.3.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@storybook/addon-toolbars", [
         ["npm:6.3.6", {
           "packageLocation": "./.yarn/cache/@storybook-addon-toolbars-npm-6.3.6-3c6dd5d820-5e48d24cef.zip/node_modules/@storybook/addon-toolbars/",
@@ -11263,6 +11278,32 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["schema-utils", "npm:2.7.1"],
             ["semver", "npm:6.3.0"],
             ["webpack", "virtual:a83d8a546b13a82956311fe4e452d605edea2604b95a5a78ec32e8e1decb2108d33bae7e844bd6d244fb9f8aac4cc72e9959477749207838170b2036cd9b85e0#npm:4.46.0"]
+          ],
+          "packagePeers": [
+            "@types/webpack",
+            "webpack"
+          ],
+          "linkType": "HARD",
+        }],
+        ["virtual:b5e539ced6f4b3131b6ee9af1a1a78d66c13001e7f137f6b56899c524b32b9192942b70a808b0900d472d7f1d27836ee93da412d24d890b4d09c9e25247c0fc3#npm:3.6.0", {
+          "packageLocation": "./.yarn/__virtual__/css-loader-virtual-e72e6b9f7f/0/cache/css-loader-npm-3.6.0-3394f37d07-a45d7ee810.zip/node_modules/css-loader/",
+          "packageDependencies": [
+            ["css-loader", "virtual:b5e539ced6f4b3131b6ee9af1a1a78d66c13001e7f137f6b56899c524b32b9192942b70a808b0900d472d7f1d27836ee93da412d24d890b4d09c9e25247c0fc3#npm:3.6.0"],
+            ["@types/webpack", null],
+            ["camelcase", "npm:5.3.1"],
+            ["cssesc", "npm:3.0.0"],
+            ["icss-utils", "npm:4.1.1"],
+            ["loader-utils", "npm:1.4.0"],
+            ["normalize-path", "npm:3.0.0"],
+            ["postcss", "npm:7.0.36"],
+            ["postcss-modules-extract-imports", "npm:2.0.0"],
+            ["postcss-modules-local-by-default", "npm:3.0.3"],
+            ["postcss-modules-scope", "npm:2.2.0"],
+            ["postcss-modules-values", "npm:3.0.0"],
+            ["postcss-value-parser", "npm:4.1.0"],
+            ["schema-utils", "npm:2.7.1"],
+            ["semver", "npm:6.3.0"],
+            ["webpack", null]
           ],
           "packagePeers": [
             "@types/webpack",
@@ -19137,6 +19178,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "webpack"
           ],
           "linkType": "HARD",
+        }],
+        ["virtual:b5e539ced6f4b3131b6ee9af1a1a78d66c13001e7f137f6b56899c524b32b9192942b70a808b0900d472d7f1d27836ee93da412d24d890b4d09c9e25247c0fc3#npm:4.3.0", {
+          "packageLocation": "./.yarn/__virtual__/postcss-loader-virtual-256e885c38/0/cache/postcss-loader-npm-4.3.0-3e7af086e3-b8ba29789d.zip/node_modules/postcss-loader/",
+          "packageDependencies": [
+            ["postcss-loader", "virtual:b5e539ced6f4b3131b6ee9af1a1a78d66c13001e7f137f6b56899c524b32b9192942b70a808b0900d472d7f1d27836ee93da412d24d890b4d09c9e25247c0fc3#npm:4.3.0"],
+            ["@types/postcss", null],
+            ["@types/webpack", null],
+            ["cosmiconfig", "npm:7.0.0"],
+            ["klona", "npm:2.0.4"],
+            ["loader-utils", "npm:2.0.0"],
+            ["postcss", "npm:7.0.36"],
+            ["schema-utils", "npm:3.1.1"],
+            ["semver", "npm:7.3.5"],
+            ["webpack", null]
+          ],
+          "packagePeers": [
+            "@types/postcss",
+            "@types/webpack",
+            "postcss",
+            "webpack"
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["postcss-merge-longhand", [
@@ -22310,6 +22373,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "webpack"
           ],
           "linkType": "HARD",
+        }],
+        ["virtual:b5e539ced6f4b3131b6ee9af1a1a78d66c13001e7f137f6b56899c524b32b9192942b70a808b0900d472d7f1d27836ee93da412d24d890b4d09c9e25247c0fc3#npm:1.3.0", {
+          "packageLocation": "./.yarn/__virtual__/style-loader-virtual-6fbe5297c7/0/cache/style-loader-npm-1.3.0-2047b33843-1be9e87053.zip/node_modules/style-loader/",
+          "packageDependencies": [
+            ["style-loader", "virtual:b5e539ced6f4b3131b6ee9af1a1a78d66c13001e7f137f6b56899c524b32b9192942b70a808b0900d472d7f1d27836ee93da412d24d890b4d09c9e25247c0fc3#npm:1.3.0"],
+            ["@types/webpack", null],
+            ["loader-utils", "npm:2.0.0"],
+            ["schema-utils", "npm:2.7.1"],
+            ["webpack", null]
+          ],
+          "packagePeers": [
+            "@types/webpack",
+            "webpack"
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["style-to-object", [
@@ -23109,6 +23187,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@storybook/addon-docs", "virtual:abd86f0db4e628a3d1844be9352358a814881ef2b82dee67188058dec9fd0f37a9154622d1055dbe04477d6e93c1d74ae4e55efba208fff05df26b9f136509a2#npm:6.3.6"],
             ["@storybook/addon-essentials", "virtual:abd86f0db4e628a3d1844be9352358a814881ef2b82dee67188058dec9fd0f37a9154622d1055dbe04477d6e93c1d74ae4e55efba208fff05df26b9f136509a2#npm:6.3.6"],
             ["@storybook/addon-links", "virtual:abd86f0db4e628a3d1844be9352358a814881ef2b82dee67188058dec9fd0f37a9154622d1055dbe04477d6e93c1d74ae4e55efba208fff05df26b9f136509a2#npm:6.3.6"],
+            ["@storybook/addon-postcss", "npm:2.0.0"],
             ["@storybook/react", "virtual:abd86f0db4e628a3d1844be9352358a814881ef2b82dee67188058dec9fd0f37a9154622d1055dbe04477d6e93c1d74ae4e55efba208fff05df26b9f136509a2#npm:6.3.6"],
             ["@testing-library/jest-dom", "npm:5.14.1"],
             ["@testing-library/react", "virtual:abd86f0db4e628a3d1844be9352358a814881ef2b82dee67188058dec9fd0f37a9154622d1055dbe04477d6e93c1d74ae4e55efba208fff05df26b9f136509a2#npm:12.0.0"],
