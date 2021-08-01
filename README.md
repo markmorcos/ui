@@ -75,7 +75,4 @@ yarn deploy
 Note: AWS credentials should be configured for this command to work
 
 The deploy URL would be:
-
-```
-https://ui-fe.s3.eu-central-1.amazonaws.com/index.html
-```
+https://markmorcos.github.io/ui/
