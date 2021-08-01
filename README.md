@@ -8,15 +8,14 @@
 
 This repository contains 2 main apps. The Storybook app for component documentation and the UI app for demonstrating these components 
 
-[Storybook URL](https://ui-fe.s3.eu-central-1.amazonaws.com/index.html)
-
-## Building and running on localhost
+## Getting started
 
 First install dependencies:
 
 ```sh
 yarn install
 ```
+### Running
 
 To run UI in hot module reloading mode:
 
@@ -36,6 +35,8 @@ To run both concurrently:
 yarn start
 ```
 
+### Building
+
 To create a UI production build:
 
 ```sh
@@ -48,24 +49,31 @@ To create a Storybook production build:
 yarn build:storybook
 ```
 
-To create a production build for both apps:
+To create production builds for both apps:
 
 ```sh
 yarn build
 ```
 
-## Testing
+### Testing
 
-To run unit tests:
+To run unit tests for UI:
 
 ```sh
 yarn test
 ```
 
-## Deploying
-To deploy Storybook to S3:
+### Deploying
+
+To deploy Storybook:
 
 ```sh
 yarn deploy
 ```
+
 Note: AWS credentials should be configured for this command to work
+
+The deploy URL would be:
+```
+https://ui-fe.s3.eu-central-1.amazonaws.com/index.html
+```
