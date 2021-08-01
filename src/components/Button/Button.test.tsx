@@ -13,7 +13,11 @@ describe('Button', () => {
 
   it('Should not click button if it is disabled', () => {
     const onClick = jest.fn()
-    render(<Button disabled onClick={onClick}>Test Disabled</Button>)
+    render(
+      <Button disabled onClick={onClick}>
+        Test Disabled
+      </Button>,
+    )
     fireEvent.click(screen.getByText('Test Disabled'))
     expect(onClick).not.toHaveBeenCalled()
   })
