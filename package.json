@@ -19,7 +19,7 @@
     "start:ui": "parcel src/index.html",
     "start:storybook": "start-storybook -p 6006 --ci --quiet",
     "build": "yarn clean && concurrently 'yarn build:ui' 'yarn build:storybook'",
-    "build:ui": "yarn clean:ui && parcel build --dist-dir dist/ui --public-url https://ui-fe.s3.eu-central-1.amazonaws.com src/index.html",
+    "build:ui": "yarn clean:ui && parcel build --dist-dir dist/ui --public-url /ui src/index.html",
     "build:storybook": "yarn clean:storybook && build-storybook -o dist/storybook --quiet",
     "test": "jest",
     "deploy": "aws s3 sync dist/storybook s3://ui-fe --acl=public-read"
