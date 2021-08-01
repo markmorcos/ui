@@ -6,7 +6,7 @@
   </a>
 </p>
 
-This repository contains 2 main apps. The Storybook app for component documentation and the UI app for demonstrating these components
+This repository contains 2 main apps. The Storybook app for component documentation and the demo app for demonstrating these components
 
 ## Getting started
 
@@ -18,10 +18,10 @@ yarn install
 
 ### Running
 
-To run UI in hot module reloading mode:
+To run the demo in hot module reloading mode:
 
 ```sh
-yarn start:ui
+yarn start:demo
 ```
 
 To run Storybook in hot module reloading mode:
@@ -38,10 +38,10 @@ yarn start
 
 ### Building
 
-To create a UI production build:
+To create a demo production build:
 
 ```sh
-yarn build:ui
+yarn build:demo
 ```
 
 To create a Storybook production build:
@@ -66,13 +66,10 @@ yarn test
 
 ### Deploying
 
-To deploy Storybook:
+The Github Workflow deploys everything automatically once a commit is pushed to the `main` branch.
 
-```sh
-yarn deploy
-```
+To deploy manually, the `dist` folder contents should be pushed to the `gh-pages` branch.
 
-Note: AWS credentials should be configured for this command to work
+[Demo](https://markmorcos.github.io/demo/)
 
-The deploy URL would be:
-https://markmorcos.github.io/ui/
+[Storybook](https://markmorcos.github.io/storybook/)
