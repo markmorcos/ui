@@ -20,6 +20,7 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           install: false
+          build: false
           start: yarn start:demo
           command: yarn test:e2e
 
@@ -31,6 +32,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-
-      - name: Cypress
-        run: yarn test:e2e
