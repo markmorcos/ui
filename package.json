@@ -19,7 +19,7 @@
     "start:demo": "parcel src/index.html",
     "start:storybook": "start-storybook -p 6006 --ci --quiet",
     "build": "yarn clean && concurrently 'yarn build:demo' 'yarn build:storybook'",
-    "build:demo": "yarn clean:demo && parcel build --dist-dir dist/demo --public-url /demo src/index.html",
+    "build:demo": "yarn clean:demo && parcel build --dist-dir dist/demo --public-url /ui/demo src/index.html",
     "build:storybook": "yarn clean:storybook && build-storybook -o dist/storybook --quiet",
     "test": "jest"
   },

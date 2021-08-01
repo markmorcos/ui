@@ -70,6 +70,6 @@ The Github Workflow deploys everything automatically once a commit is pushed to 
 
 To deploy manually, the `dist` folder contents should be pushed to the `gh-pages` branch.
 
-[Demo](https://markmorcos.github.io/demo/)
+[Demo](https://markmorcos.github.io/ui/demo/)
 
-[Storybook](https://markmorcos.github.io/storybook/)
+[Storybook](https://markmorcos.github.io/ui/storybook/)
