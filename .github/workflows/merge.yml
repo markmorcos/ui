@@ -16,6 +16,11 @@ jobs:
       - name: Test
         run: yarn test
 
+      - name: Cypress
+        run: |
+          yarn start:demo
+          yarn test:e2e
+
       - name: Build
         run: yarn build
 

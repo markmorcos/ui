@@ -2,7 +2,7 @@ import { welcomeMessage } from '../../fixtures/homepage.json'
 
 describe('Button', () => {
   beforeEach(() => {
-    cy.visit('https://markmorcos.github.io/ui/demo/')
+    cy.visit('http://localhost:1234')
   })
 
   it('displays a welcome message', () => {
