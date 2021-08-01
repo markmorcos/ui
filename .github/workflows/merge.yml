@@ -19,7 +19,9 @@ jobs:
       - name: Cypress
         uses: cypress-io/github-action@v2
         with:
-          start: yarn start
+          install: false
+          start: yarn start:demo
+          command: yarn test:e2e
 
       - name: Build
         run: yarn build
