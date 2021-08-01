@@ -1,15 +1,13 @@
-import * as React from 'react';
+import * as React from 'react'
 
-import { Button } from './components/Button/Button';
+import { Button } from './components/Button/Button'
 
-interface Props { }
+interface Props {}
 
 class App extends React.Component<Props> {
   render() {
-    return (
-      <Button primary>Hello, world!</Button>
-    );
+    return <Button primary>Hello, world!</Button>
   }
 }
 
-export default App;
+export default App

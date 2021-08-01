@@ -1,0 +1,10 @@
+# Ignore artifacts:
+dist
+coverage
+
+# Ignore all HTML files:
+*.html
+
+# Yarn
+.pnp.cjs
+.yarn

@@ -6,7 +6,7 @@
   </a>
 </p>
 
-This repository contains 2 main apps. The Storybook app for component documentation and the UI app for demonstrating these components 
+This repository contains 2 main apps. The Storybook app for component documentation and the UI app for demonstrating these components
 
 ## Getting started
 
@@ -15,6 +15,7 @@ First install dependencies:
 ```sh
 yarn install
 ```
+
 ### Running
 
 To run UI in hot module reloading mode:
@@ -74,6 +75,7 @@ yarn deploy
 Note: AWS credentials should be configured for this command to work
 
 The deploy URL would be:
+
 ```
 https://ui-fe.s3.eu-central-1.amazonaws.com/index.html
 ```
