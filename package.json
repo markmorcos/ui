@@ -21,7 +21,8 @@
     "build": "yarn clean && concurrently 'yarn build:demo' 'yarn build:storybook'",
     "build:demo": "yarn clean:demo && parcel build --dist-dir dist/demo --public-url /ui/demo src/index.html",
     "build:storybook": "yarn clean:storybook && build-storybook -o dist/storybook --quiet",
-    "test": "jest"
+    "test": "jest",
+    "test:e2e": "cypress run --quiet"
   },
   "dependencies": {
     "react": "^17.0.2",
@@ -45,6 +46,7 @@
     "@types/styled-components": "^5.1.11",
     "babel-loader": "^8.2.2",
     "concurrently": "^6.2.0",
+    "cypress": "^8.1.0",
     "jest": "^27.0.6",
     "jsdom": "^16.6.0",
     "parcel": "next",
