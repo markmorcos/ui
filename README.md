@@ -6,56 +6,29 @@
   </a>
 </p>
 
-This repository contains 2 main apps. The Storybook app for component documentation and the component library
+Simple and neat component library
 
 ## Getting started
 
-First install dependencies:
+First add the library to your project:
 
 ```sh
-yarn install
+yarn add @markmorcos/ui
 ```
 
-### Running
+You can now import and use components like so:
 
-To run Storybook in hot module reloading mode:
+```javascript
+import { Button } from '@markmorcos/ui'
 
-```sh
-yarn start
+export default Component = () => <Button>Hello, world!</Button>
 ```
 
-### Building
+## Documentation
 
-To create a library production build:
+For detailed information on how to use the library, please check our [Storybook](https://markmorcos.github.io/ui/storybook/) docs.
 
-```sh
-yarn build:lib
-```
+## Collaborators
 
-To create a Storybook production build:
-
-```sh
-yarn build:storybook
-```
-
-To create production builds for both apps:
-
-```sh
-yarn build
-```
-
-### Testing
-
-To run unit tests for the library:
-
-```sh
-yarn test
-```
-
-### Deploying
-
-The Github Workflow deploys everything automatically once a commit is pushed to the `main` branch.
-
-To deploy manually, the `dist` folder contents should be pushed to the `gh-pages` branch.
-
-[Storybook](https://markmorcos.github.io/ui/storybook/)
+@markmorcos
+@mirnamaurice
