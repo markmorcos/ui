@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
     "esModuleInterop": true,
-    "outDir": "./dist/",
-    "sourceMap": true,
+    "outDir": "./dist/lib",
+    "skipLibCheck": true,
+    "sourceMap": false,
     "strict": true,
     "noImplicitReturns": true,
     "noImplicitAny": true,
@@ -12,5 +13,6 @@
     "allowJs": true,
     "jsx": "react"
   },
-  "include": ["./src/**/*"]
+  "include": ["./src/**/*"],
+  "exclude": ["./src/**/*.test.tsx", "./src/**/*.stories.tsx"]
 }

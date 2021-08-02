@@ -1,8 +1,11 @@
 {
-  "name": "ui",
+  "name": "@markmorcos/ui",
   "version": "1.0.0",
   "description": "UI",
-  "main": "dist/demo/index.html",
+  "main": "dist/lib/index.js",
+  "files": [
+    "dist/lib/**/*"
+  ],
   "keywords": [
     "ui",
     "design",
@@ -12,17 +15,14 @@
   "author": "Mark Morcos",
   "license": "MIT",
   "scripts": {
-    "clean": "rm -rf dist",
-    "clean:demo": "rm -rf dist/demo",
-    "clean:storybook": "rm -rf dist/storybook",
-    "start": "concurrently 'yarn start:demo' 'yarn start:storybook'",
-    "start:demo": "parcel src/index.html",
-    "start:storybook": "start-storybook -p 6006 --ci --quiet",
-    "build": "yarn clean && concurrently 'yarn build:demo' 'yarn build:storybook'",
-    "build:demo": "yarn clean:demo && parcel build --dist-dir dist/demo --public-url /ui/demo src/index.html",
+    "clean": "rimraf dist",
+    "clean:lib": "rimraf dist/lib",
+    "clean:storybook": "rimraf dist/storybook",
+    "start": "start-storybook -p 6006 --ci --quiet",
+    "build": "yarn clean && concurrently 'yarn build:lib' 'yarn build:storybook'",
+    "build:lib": "yarn clean:lib && tsc",
     "build:storybook": "yarn clean:storybook && build-storybook -o dist/storybook --quiet",
-    "test": "jest src",
-    "test:e2e": "cypress run --quiet"
+    "test": "jest src"
   },
   "dependencies": {
     "react": "^17.0.2",
@@ -46,12 +46,10 @@
     "@types/styled-components": "^5.1.11",
     "babel-loader": "^8.2.2",
     "concurrently": "^6.2.0",
-    "cypress": "^8.1.0",
     "jest": "^27.0.6",
     "jsdom": "^16.6.0",
     "parcel": "next",
-    "parcel-bundler": "^1.12.5",
-    "prettier": "2.3.2",
+    "rimraf": "^3.0.2",
     "ts-jest": "^27.0.4",
     "typescript": "^4.3.5"
   }
