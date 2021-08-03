@@ -6,8 +6,6 @@ on:
 jobs:
   main:
     runs-on: ubuntu-latest
-    env:
-      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -22,7 +20,9 @@ jobs:
         run: yarn build
 
       - name: Publish library
-        run: yarn npm publish --access public
+        run: |
+          echo "npmAuthToken: ${{ secrets.NPM_TOKEN }}" >> .yarnrc.yml
+          yarn npm publish --access=public --tolerate-republish
 
       - name: Deploy Storybook
         uses: peaceiris/actions-gh-pages@v3
