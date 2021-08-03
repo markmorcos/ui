@@ -6,6 +6,7 @@
     "type": "git",
     "url": "https://github.com/markmorcos/ui.git"
   },
+  "homepage": "https://markmorcos.github.io/ui/",
   "main": "dist/lib/index.js",
   "files": [
     "dist/lib/**/*"
