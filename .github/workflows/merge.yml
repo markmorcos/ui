@@ -22,7 +22,7 @@ jobs:
         run: yarn build
 
       - name: Publish library
-        run: npm publish
+        run: yarn npm publish
 
       - name: Deploy Storybook
         uses: peaceiris/actions-gh-pages@v3
