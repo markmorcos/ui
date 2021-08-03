@@ -26,9 +26,9 @@ export default Component = () => <Button>Hello, world!</Button>
 
 ## Documentation
 
-For detailed information on how to use the library, please check our [Storybook](https://markmorcos.github.io/ui/storybook/) docs.
+For detailed information on how to use the library, please check our [Storybook](https://markmorcos.github.io/ui/) docs.
 
 ## Collaborators
 
-@markmorcos
-@mirnamaurice
+[@markmorcos](https://github.com/markmorcos)
+[@mirnamaurice](https://github.com/mirnamaurice)
