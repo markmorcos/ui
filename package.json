@@ -27,7 +27,7 @@
     "build": "yarn clean && concurrently 'yarn build:lib' 'yarn build:storybook'",
     "build:lib": "yarn clean:lib && tsc",
     "build:storybook": "yarn clean:storybook && build-storybook -o dist/storybook --quiet",
-    "test": "jest src"
+    "test": "jest"
   },
   "dependencies": {
     "react": "^17.0.2",
