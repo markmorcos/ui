@@ -1,10 +1,6 @@
 # UI
 
-<p>
-  <a href="https://github.com/markmorcos/ui/actions" alt="Main">
-    <img src="https://github.com/markmorcos/ui/actions/workflows/merge.yml/badge.svg" />
-  </a>
-</p>
+[![UI](https://circleci.com/gh/markmorcos/ui.svg?style=svg)](https://app.circleci.com/pipelines/github/markmorcos/ui?branch=main)
 
 Simple and neat component library
 
