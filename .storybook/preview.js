@@ -1,5 +1,5 @@
 export const parameters = {
-  actions: { argTypesRegex: '^on[A-Z].*' },
+  actions: { disabled: true },
   controls: {
     matchers: {
       color: /(background|color)$/i,

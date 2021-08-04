@@ -1,0 +1,46 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@4.1
+  gh-pages: sugarshin/gh-pages@0.0.6
+
+jobs:
+  library:
+    docker:
+      - image: cimg/node:lts
+    steps:
+      - checkout
+      - node/install-packages:
+          pkg-manager: yarn
+      - run:
+          name: Test
+          command: yarn test
+      - run:
+          name: Build
+          command: yarn build:lib
+      - run:
+          name: Deploy
+          command: |
+            echo "npmAuthToken: $NPM_TOKEN" >> .yarnrc.yml
+            yarn npm publish --access=public --tolerate-republish
+  storybook:
+    docker:
+      - image: cimg/node:lts
+    steps:
+      - checkout
+      - node/install-packages:
+          pkg-manager: yarn
+      - run:
+          name: Test
+          command: yarn test
+      - run:
+          name: Build
+          command: yarn build:storybook
+      - gh-pages/deploy:
+          build-dir: dist/storybook
+
+workflows:
+  main: 
+    jobs:
+      - library
+      - storybook
