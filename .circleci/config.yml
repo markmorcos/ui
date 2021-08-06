@@ -30,6 +30,8 @@ jobs:
       - checkout
       - node/install-packages:
           pkg-manager: yarn
+      - setup_remote_docker:
+          version: 19.03.13
       - run:
           name: Test
           command: yarn test:loki
