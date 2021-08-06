@@ -27,7 +27,8 @@
     "build": "yarn clean && concurrently 'yarn build:lib' 'yarn build:storybook'",
     "build:lib": "yarn clean:lib && tsc",
     "build:storybook": "yarn clean:storybook && build-storybook -o dist/storybook --quiet",
-    "test": "jest"
+    "test:lib": "jest",
+    "test:loki": "yarn loki test"
   },
   "dependencies": {
     "react": "^17.0.2",
@@ -62,14 +63,14 @@
   "loki": {
     "configurations": {
       "chrome.laptop": {
-        "target": "chrome.app",
+        "target": "chrome.docker",
         "width": 1366,
         "height": 768,
         "deviceScaleFactor": 1,
         "mobile": false
       },
       "chrome.iphone7": {
-        "target": "chrome.app",
+        "target": "chrome.docker",
         "preset": "iPhone 7"
       }
     }
