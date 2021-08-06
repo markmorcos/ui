@@ -3,8 +3,7 @@ module.exports = {
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-essentials',
-    '@storybook/addon-postcss',
-    'loki/configure-react'
+    '@storybook/addon-postcss'
   ],
   webpackFinal: { performance: { hints: false } },
 }

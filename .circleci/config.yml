@@ -34,7 +34,7 @@ jobs:
           version: 19.03.13
       - run:
           name: Test
-          command: yarn test:loki
+          command: yarn test:lib
       - run:
           name: Build
           command: yarn build:storybook
