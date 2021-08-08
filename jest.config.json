@@ -1,4 +1,5 @@
 {
   "testEnvironment": "jsdom",
-  "preset": "ts-jest"
+  "preset": "ts-jest",
+  "setupFilesAfterEnv": ["<rootDir>/jest.setup.ts"]
 }
