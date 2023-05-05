@@ -5,42 +5,60 @@ orbs:
   gh-pages: sugarshin/gh-pages@0.0.6
 
 jobs:
+  test:
+    docker:
+      - image: cimg/node:lts
+    steps:
+      - checkout
+      - run:
+          name: Install
+          command: npx pnpm install
+      - run:
+          name: Test
+          command: npm run test:lib
   library:
     docker:
       - image: cimg/node:lts
     steps:
       - checkout
-      - node/install-packages:
-          pkg-manager: yarn
       - run:
-          name: Test
-          command: yarn test:lib
+          name: Install
+          command: npx pnpm install
       - run:
           name: Build
-          command: yarn build:lib
+          command: npm run build:lib
       - run:
           name: Deploy
           command: |
-            echo "npmAuthToken: $NPM_TOKEN" >> .yarnrc.yml
-            yarn npm publish --access=public --tolerate-republish
+            echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> .npmrc
+            npm publish --access=public --tolerate-republish
   storybook:
     docker:
       - image: cimg/node:lts
     steps:
       - checkout
-      - node/install-packages:
-          pkg-manager: yarn
       - run:
-          name: Test
-          command: yarn test:lib
+          name: Install
+          command: npx pnpm install
       - run:
           name: Build
-          command: yarn build:storybook
+          command: npm run build:storybook
       - gh-pages/deploy:
           build-dir: dist/storybook
 
 workflows:
-  main: 
+  main:
     jobs:
-      - library
-      - storybook
+      - test
+      - library:
+          requires:
+            - test
+          filters:
+            branches:
+              only: main
+      - library:
+          requires:
+            - test
+          filters:
+            branches:
+              only: main
