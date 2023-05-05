@@ -8,7 +8,7 @@ interface Props {
 const StyledTopBar = styled.div`
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   height: 24px;
-  width: 100%;
+  width: calc(100% - 32px);
   background-color: black;
   color: white;
   font-size: 24px;

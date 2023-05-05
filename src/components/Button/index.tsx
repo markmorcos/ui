@@ -13,7 +13,7 @@ interface Props {
   /**
    * Button contents
    */
-  children: string
+  children: React.ReactNode
   /**
    * Optional disabled flag
    */
@@ -68,6 +68,7 @@ const StyledButton = styled.button`
       cursor: default;
       color: #d9d9d9;
       background-color: white;
+      cursor: not-allowed;
     `}
 `
 
