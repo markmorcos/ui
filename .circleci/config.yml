@@ -56,7 +56,7 @@ workflows:
           filters:
             branches:
               only: main
-      - library:
+      - storybook:
           requires:
             - test
           filters:
